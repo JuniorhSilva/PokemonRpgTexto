@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "c:\\Users\\junio\\Documents\\PokemonRpgTexto\\venv\\Scripts\\python.exe",
+    "code-runner.languageIdToFileExtensionMap": {
+        "bat": ".bat",
+        "powershell": ".ps1",
+        "typescript": ".ts"
+    }
+}
