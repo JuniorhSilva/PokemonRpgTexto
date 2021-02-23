@@ -41,6 +41,7 @@ def carregar_jogo():
             jogo_salvo = load(arquivo)
             return jogo_salvo
     except:
+        return False
         print('Erro ao carregar')
 
 
@@ -68,6 +69,9 @@ if __name__ == '__main__':
             break
         elif pergunta_usuario == '2':
             usuario_player = carregar_jogo()
+            if not usuario_player:
+                print('Não existe jogo salvo')
+                continue
             break
         elif pergunta_usuario == '0':
             print('Saindo...')

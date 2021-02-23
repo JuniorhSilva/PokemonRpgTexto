@@ -15,6 +15,8 @@ class Pocao(Pokemon, Pessoa):
 class Curar(Pocao):
     def funcao_pocao(self, saldo):
         if saldo > self.preco:
+            print('Curando...')
+            sleep(1.5)
             curar_pokemon = self.pokemon
             print(f'Preco de cura: {self.preco}')
             novo = saldo - self.preco

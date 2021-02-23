@@ -1,6 +1,7 @@
 from random import random, randint
 from time import sleep
 
+
 class Pokemon:
     def __init__(self, nome=None, level=None):
         self.nome = nome
@@ -16,7 +17,7 @@ class Pokemon:
     def atacar(self, pokemon_atk):
         if self.vida > 0:
             total_atk = int(self.atk * (random() * 1.5))
-            sleep(1.0)
+            sleep(0.5)
             pokemon_atk.vida -= total_atk
             print(f'{pokemon_atk} perdeu {total_atk}pts de vida')
             if pokemon_atk.vida <= 0:
